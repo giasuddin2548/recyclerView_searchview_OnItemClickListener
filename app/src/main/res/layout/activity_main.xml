@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewId"
+        app:queryHint="Search here"
+        android:layout_width="match_parent"
+        android:textCursorDrawable="@null"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null"
+        android:layout_height="60dp">
+
+    </androidx.appcompat.widget.SearchView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/searchViewId"
+        android:id="@+id/RecyclerViewId"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textViewEmtyMessageId"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:text="No Data available"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+
+</RelativeLayout>
